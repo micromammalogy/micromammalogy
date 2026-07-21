@@ -2,49 +2,112 @@
   <style>
     .bg { fill: #0D1117; }
     .border { fill: none; stroke: #30363D; stroke-width: 2; }
-    .title { fill: #F0F6FC; font: 700 40px Arial, sans-serif; }
-    .label { fill: #C9D1D9; font: 18px Arial, sans-serif; }
-    .status { fill: #3FB950; font: 18px Arial, sans-serif; }
-    .sub { fill: #8B949E; font: 17px Arial, sans-serif; }
 
-    .dot1, .dot2, .dot3 {
+    .title {
+      fill: #F0F6FC;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      fill: #8B949E;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+    }
+
+    .heading {
+      fill: #8B949E;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .label {
+      fill: #C9D1D9;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+    }
+
+    .status {
+      fill: #3FB950;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+    }
+
+    .dot1,
+    .dot2,
+    .dot3 {
       fill: #3FB950;
       animation: pulse 2.4s ease-in-out infinite;
     }
 
-    .dot2 { animation-delay: 0.4s; }
-    .dot3 { animation-delay: 0.8s; }
+    .dot2 { animation-delay: .4s; }
+    .dot3 { animation-delay: .8s; }
 
     @keyframes pulse {
-      0%, 100% { opacity: 0.35; }
-      50% { opacity: 1; }
+      0%,100% { opacity:.35; }
+      50% { opacity:1; }
     }
   </style>
 
   <rect class="bg" width="900" height="260" rx="18"/>
   <rect class="border" x="1" y="1" width="898" height="258" rx="18"/>
 
-  <text class="title" x="450" y="58" text-anchor="middle">
+  <!-- Title -->
+
+  <text
+    class="title"
+    x="450"
+    y="55"
+    text-anchor="middle">
     Lead Solutions Engineer
   </text>
 
-  <text class="sub" x="450" y="88" text-anchor="middle">
+  <text
+    class="subtitle"
+    x="450"
+    y="82"
+    text-anchor="middle">
     AI | APIs | Automation
   </text>
 
-  <line x1="50" y1="110" x2="850" y2="110" stroke="#30363D"/>
+  <line
+    x1="50"
+    y1="105"
+    x2="850"
+    y2="105"
+    stroke="#30363D"
+    stroke-width="1"/>
 
-  <text class="sub" x="50" y="140">AI SYSTEMS</text>
+  <!-- Dashboard -->
 
-  <circle class="dot1" cx="55" cy="174" r="7"/>
-  <text class="label" x="80" y="180">AI Agents</text>
-  <text class="status" x="700" y="180">Online</text>
+  <text class="heading" x="50" y="135">
+    AI SYSTEMS
+  </text>
 
-  <circle class="dot2" cx="55" cy="208" r="7"/>
-  <text class="label" x="80" y="214">Enterprise APIs</text>
-  <text class="status" x="700" y="214">Connected</text>
+  <circle class="dot1" cx="58" cy="168" r="7"/>
+  <text class="label" x="80" y="174">
+    AI Agents
+  </text>
+  <text class="status" x="700" y="174">
+    Online
+  </text>
 
-  <circle class="dot3" cx="55" cy="242" r="7"/>
-  <text class="label" x="80" y="248">Integrations</text>
-  <text class="status" x="700" y="248">Running</text>
+  <circle class="dot2" cx="58" cy="202" r="7"/>
+  <text class="label" x="80" y="208">
+    Enterprise APIs
+  </text>
+  <text class="status" x="700" y="208">
+    Connected
+  </text>
+
+  <circle class="dot3" cx="58" cy="236" r="7"/>
+  <text class="label" x="80" y="242">
+    Integrations
+  </text>
+  <text class="status" x="700" y="242">
+    Running
+  </text>
+
 </svg>
