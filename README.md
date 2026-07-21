@@ -1,4 +1,5 @@
-<img src="profile-dashboard.svg?v=2" alt="Profile Dashboard" width="100%">
-<!--
-**micromammalogy/micromammalogy** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">
+  <img src="./profile-dashboard.svg?v=3" width="100%" alt="Profile Dashboard">
+</p>
 
+Lead Solutions Engineer specializing in AI, APIs, and automation. I build practical tools that solve complex operational problems.
