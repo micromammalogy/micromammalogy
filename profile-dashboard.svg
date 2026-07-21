@@ -5,34 +5,39 @@
 
     .title {
       fill: #F0F6FC;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 40px;
+      font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+      font-size: 36px;
       font-weight: 700;
+    }
+
+    .subtitle,
+    .heading,
+    .label,
+    .status {
+      font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
     }
 
     .subtitle {
       fill: #8B949E;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 18px;
+      font-size: 17px;
     }
 
     .heading {
       fill: #8B949E;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 600;
+      letter-spacing: 1px;
     }
 
     .label {
       fill: #C9D1D9;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 18px;
+      font-size: 17px;
     }
 
     .status {
       fill: #3FB950;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 18px;
+      font-size: 17px;
+      animation: statusFade 3.2s ease-in-out infinite;
     }
 
     .dot1,
@@ -42,33 +47,31 @@
       animation: pulse 2.4s ease-in-out infinite;
     }
 
-    .dot2 { animation-delay: .4s; }
-    .dot3 { animation-delay: .8s; }
+    .dot2 { animation-delay: 0.4s; }
+    .dot3 { animation-delay: 0.8s; }
+
+    .status2 { animation-delay: 0.4s; }
+    .status3 { animation-delay: 0.8s; }
 
     @keyframes pulse {
-      0%,100% { opacity:.35; }
-      50% { opacity:1; }
+      0%, 100% { opacity: 0.35; }
+      50% { opacity: 1; }
+    }
+
+    @keyframes statusFade {
+      0%, 100% { opacity: 0.78; }
+      50% { opacity: 1; }
     }
   </style>
 
   <rect class="bg" width="900" height="260" rx="18"/>
   <rect class="border" x="1" y="1" width="898" height="258" rx="18"/>
 
-  <!-- Title -->
-
-  <text
-    class="title"
-    x="450"
-    y="55"
-    text-anchor="middle">
+  <text class="title" x="450" y="55" text-anchor="middle">
     Lead Solutions Engineer
   </text>
 
-  <text
-    class="subtitle"
-    x="450"
-    y="82"
-    text-anchor="middle">
+  <text class="subtitle" x="450" y="82" text-anchor="middle">
     AI | APIs | Automation
   </text>
 
@@ -78,36 +81,34 @@
     x2="850"
     y2="105"
     stroke="#30363D"
-    stroke-width="1"/>
-
-  <!-- Dashboard -->
+    stroke-width="1"
+  />
 
   <text class="heading" x="50" y="135">
-    AI SYSTEMS
+    CURRENT FOCUS
   </text>
 
   <circle class="dot1" cx="58" cy="168" r="7"/>
   <text class="label" x="80" y="174">
-    AI Agents
+    AI Solutions
   </text>
   <text class="status" x="700" y="174">
-    Online
+    Building
   </text>
 
   <circle class="dot2" cx="58" cy="202" r="7"/>
   <text class="label" x="80" y="208">
-    Enterprise APIs
+    Enterprise Plugins
   </text>
-  <text class="status" x="700" y="208">
-    Connected
+  <text class="status status2" x="700" y="208">
+    Shipping
   </text>
 
   <circle class="dot3" cx="58" cy="236" r="7"/>
   <text class="label" x="80" y="242">
-    Integrations
+    Custom Integrations
   </text>
-  <text class="status" x="700" y="242">
-    Running
+  <text class="status status3" x="700" y="242">
+    Active
   </text>
-
 </svg>
