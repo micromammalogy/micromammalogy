@@ -1,0 +1,108 @@
+<svg width="900" height="430" viewBox="0 0 900 430" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg { fill: #0D1117; }
+    .border { fill: none; stroke: #30363D; stroke-width: 2; }
+
+    .heading,
+    .project,
+    .description,
+    .button,
+    .eyebrow {
+      font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+    }
+
+    .eyebrow {
+      fill: #8B949E;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .heading {
+      fill: #F0F6FC;
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    .project {
+      fill: #F0F6FC;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .description {
+      fill: #8B949E;
+      font-size: 16px;
+    }
+
+    .accent {
+      fill: #3FB950;
+    }
+
+    .line {
+      stroke: #30363D;
+      stroke-width: 1;
+    }
+
+    .button-bg {
+      fill: #161B22;
+      stroke: #3FB950;
+      stroke-width: 1.5;
+    }
+
+    .button {
+      fill: #3FB950;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .pulse {
+      animation: pulse 2.6s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 0.45; }
+      50% { opacity: 1; }
+    }
+  </style>
+
+  <rect class="bg" width="900" height="430" rx="18"/>
+  <rect class="border" x="1" y="1" width="898" height="428" rx="18"/>
+
+  <text class="eyebrow" x="50" y="45">SELECTED WORK</text>
+  <text class="heading" x="50" y="82">Projects and Systems</text>
+
+  <line class="line" x1="50" y1="105" x2="850" y2="105"/>
+
+  <circle class="accent pulse" cx="58" cy="143" r="6"/>
+  <text class="project" x="80" y="150">LC Demo</text>
+  <text class="description" x="80" y="178">
+    AI powered platform for landed cost, classification,
+  </text>
+  <text class="description" x="80" y="201">
+    checkout, order, and shipping workflows.
+  </text>
+
+  <circle class="accent pulse" cx="58" cy="242" r="6" style="animation-delay:.4s"/>
+  <text class="project" x="80" y="249">Onboarding Wizard</text>
+  <text class="description" x="80" y="277">
+    Internal automation platform for complex onboarding
+  </text>
+  <text class="description" x="80" y="300">
+    workflows and implementation tasks.
+  </text>
+
+  <circle class="accent pulse" cx="58" cy="341" r="6" style="animation-delay:.8s"/>
+  <text class="project" x="80" y="348">AI Development Workflow</text>
+  <text class="description" x="80" y="376">
+    Builder, reviewer, and browser agents working together
+  </text>
+  <text class="description" x="80" y="399">
+    to accelerate feature delivery.
+  </text>
+
+  <rect class="button-bg" x="630" y="350" width="220" height="48" rx="10"/>
+  <text class="button" x="740" y="380" text-anchor="middle">
+    View LinkedIn Profile →
+  </text>
+</svg>
