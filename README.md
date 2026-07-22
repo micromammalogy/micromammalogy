@@ -4,16 +4,6 @@
 
 Lead Solutions Engineer specializing in AI, APIs, and automation. I build practical tools that solve complex operational problems.
 
-## Featured Projects
-
-### [Onboarding Wizard](https://github.com/micromammalogy/onboarding-wizard)
-
-Internal tool that reduces repetitive onboarding work and guides teams through complex implementation tasks.
-
-### LC Demo
-
-AI powered demo platform for landed cost, checkout, classification, order, and shipping workflows.
-
-### AI Swarm
-
-Multi agent development workflow using builder, reviewer, and browser agents to accelerate feature delivery.
+<a href="https://www.linkedin.com/in/shawn-roah/">
+  <img src="./selected-work.svg?v=1" width="100%" alt="Selected work and LinkedIn profile">
+</a>
